@@ -1,7 +1,10 @@
 # ProjetoWebmotors
 Teste para admissão FRONT-END Webmotors
+
 Autor: Jose Roberto Teixeira Neto
+
 Linkedin: https://www.linkedin.com/in/roberto-teixeira-b42522123/
+
 link do projeto: https://github.com/jrteixeira/ProjetoWebmotors
 
 Todas as funcionalidades exigidas foram concluidas, com excessao de:
