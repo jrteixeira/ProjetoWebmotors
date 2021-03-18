@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border: 1px solid #dbdbdb;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+  position: absolute;
+  background: #f6f6f6;
+}
+
+.suggestions {
+  border: 1px solid #ebebeb;
+    border-top-width: 0;
+    list-style: none;
+    position: absolute;
+    background: #fcfcfc;
+    margin-top: 0;
+    max-height: 143px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: calc(300px + 1rem);
+    border-radius: 0 4px 4px 4px;
+}
+
+.suggestions li {
+  padding: .2rem 2rem .2rem 1.4rem;
+  font-size: smaller;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #ff21211a;
+    color: #ff0000;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #cbcbcb;
+}

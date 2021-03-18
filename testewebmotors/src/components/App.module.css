@@ -1,0 +1,271 @@
+.container{
+  padding: 1rem 2rem;
+  max-width: 1017px;
+  margin: auto;
+}
+
+.container main{
+  background: #e0e0e0;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+main header img.logo{
+  width: 150px;
+}
+
+.tab{
+  width: auto;
+  display: flex;
+}
+
+.tabContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabSon{
+  display: flex;
+  width: 200px;
+  text-align: center;
+  align-items: flex-end; 
+  justify-content: center; 
+}
+
+.tabSon:hover, .tabSon label:hover{
+  cursor: pointer;
+  background: #d8d8d8;
+}
+
+.tabSonContainer{
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.tabSonContainerButton{
+  align-self: center;
+}
+
+.tabSonContainerButton button{
+    color: #ff920d;
+    border: 2.5px solid #ff920d;
+    padding: .5rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: bold;
+    background: none;
+}
+
+.tabSonContainer p{
+  margin-bottom: 0;
+  font-size: 14px;
+  float: left;
+}
+
+.tab .tabSon img{
+  margin-bottom: 7px;
+  flex-direction: column;
+  max-width: 30px;
+}
+
+.containerInterno{
+  background-color: white;
+  max-width: 933px;
+  max-height: 312px;
+}
+
+.msgMotos{
+  padding: 1rem;
+}
+
+.msgMotos label{
+  width: fit-content;
+  padding: 1rem;
+  border: 2px solid #ffcd42;
+  border-radius: 5px;
+  margin: auto;
+  background: #ffcd421c;
+}
+
+.checkboxGroupContainer{
+  display: flex;
+  font-size: initial;
+  padding: 0.7rem 0 0 0.7rem;
+}
+
+.checkboxContainer{
+  min-width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkboxContainer input{
+  width: auto;
+}
+
+.inpSelecContainer{
+  padding: .7rem;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.inpSelecContainer img{
+  width: 15px;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+.inpSelecContainer input{
+  flex: 2;
+  font-size: medium;
+  padding: 0.5rem;
+  border-radius: 4px 0 0 4px;
+  padding-left: 1.5rem !important;
+}
+
+.inpSelecContainer select{
+  flex: 1;
+  border-radius: 0 4px 4px 0;
+}
+
+.dFlexAlgnCenter{
+  align-items: center;
+  display: flex;
+}
+
+.btnBuscaAvancada{
+  text-decoration: none;
+  color: #c30000;
+  font-size: initial;
+}
+
+.btnBuscaAvancada::before{
+  content: '>';
+}
+
+.btnfiltro, .btnfiltro:hover{
+  text-decoration: none;
+  color: grey;
+  font-size: initial;
+  cursor: pointer;
+}
+
+.btnVerOfertas{
+  padding: .5rem 2.5rem;
+  text-decoration: none;
+  background-color: #b90000;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-size: initial;
+  float: right;
+}
+
+.msg{
+  margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.containerProduct{
+  border: 1px solid #d9d7d7;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.containerProduct .flex2:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerProduct li{
+  display: flex;
+  align-items: baseline;
+}
+
+.containerProduct li label:first-child{
+  font-weight: bold;
+}
+
+.containerProduct li label:last-child{
+  margin-left: 5px;
+  font-size: smaller;
+  margin-bottom: 0;
+}
+
+.containerProduct img{
+  width: 40vw;
+}
+
+/*flex css */
+.dFlex{
+  display: flex;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow{
+  flex: auto;
+  display: flex;
+}
+
+.flex1{
+  flex: 1;
+  padding: 0.7rem;
+}
+
+.flex2{
+  flex: 2;
+  padding: 0.7rem;
+}
+
+.flex3{
+  flex: 3;
+  padding: 0.7rem;
+}
+
+select{
+  padding: .75rem;
+  width: -webkit-fill-available;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+/* Responsividade mobile */
+
+@media screen and (max-width: 745px){
+  .flexRow, .containerProduct{
+    flex-direction: column;
+  }
+  .tabContainer, .rowButtons{
+    flex-direction: column-reverse;
+  }
+  .tabSonContainerButton{
+    margin-bottom: 6px;
+  }
+  .rowButtons .flex2{
+    align-self: center;
+  }
+  
+  .containerInterno{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
